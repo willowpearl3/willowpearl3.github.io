@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秘密基地导航发布 - 官方视频门户,原创高清内容持续更新</title>
+<meta name="description" content="秘密基地导航发布官方网站，专注秘密基地导航发布领域的原创高清视频内容社区，聚合创作者作品、品牌故事与精品专题，打造值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111b2e'/%3E%3Cpath d='M18 40 L18 24 L32 32 Z' fill='%2334d399'/%3E%3Cpath d='M32 40 L46 24 L46 40 Z' fill='%2360a5fa'/%3E%3C/svg%3E">
+<style>
+:root{
+  --sbj-bg:#0b1220;
+  --sbj-bg-soft:#111b2e;
+  --sbj-panel:#152238;
+  --sbj-panel-2:#1b2b46;
+  --sbj-line:rgba(120,160,220,.18);
+  --sbj-text:#e8eefb;
+  --sbj-muted:#93a5c4;
+  --sbj-green:#34d399;
+  --sbj-blue:#60a5fa;
+  --sbj-glow:rgba(52,211,153,.35);
+  --sbj-radius:16px;
+  --sbj-sticky:112px;
+  --sbj-max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sbj-sticky)}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 85% -10%,rgba(96,165,250,.18),transparent 60%),
+    radial-gradient(900px 500px at 0% 20%,rgba(52,211,153,.12),transparent 55%),
+    var(--sbj-bg);
+  color:var(--sbj-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:800}
+p{margin:0 0 12px}
+ul{margin:0;padding:0;list-style:none}
+
+.sbj-wrap{max-width:var(--sbj-max);margin:0 auto;padding:0 20px}
+.sbj-section{padding:56px 0 8px}
+.sbj-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--sbj-green);font-weight:700;margin-bottom:10px;
+}
+.sbj-eyebrow::before{content:"";width:22px;height:2px;background:var(--sbj-green);border-radius:2px}
+.sbj-h2{
+  font-size:clamp(22px,3vw,32px);letter-spacing:.02em;
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;
+}
+.sbj-h2 small{font-size:13px;font-weight:500;color:var(--sbj-muted);letter-spacing:.08em}
+.sbj-lead{color:var(--sbj-muted);max-width:760px;margin-top:10px;font-size:15px}
+.sbj-key{color:var(--sbj-green);font-weight:700}
+.sbj-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 20px;border-radius:999px;font-size:14px;font-weight:700;
+  background:linear-gradient(135deg,var(--sbj-green),#22b07d);
+  color:#04211a;transition:transform .18s ease,box-shadow .18s ease;
+  box-shadow:0 8px 24px -10px var(--sbj-glow);
+}
+.sbj-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px var(--sbj-glow)}
+.sbj-btn--ghost{
+  background:transparent;color:var(--sbj-text);
+  border:1px solid var(--sbj-line);box-shadow:none;
+}
+.sbj-btn--ghost:hover{border-color:rgba(96,165,250,.6);background:rgba(96,165,250,.08)}
+.sbj-btn--sm{padding:7px 14px;font-size:12.5px}
+
+/* ============ 吸顶公告条 + 页头 ============ */
+.sbj-sticky{
+  position:sticky;top:0;z-index:120;
+  background:rgba(9,16,29,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--sbj-line);
+}
+.sbj-announce{
+  display:flex;align-items:center;gap:14px;
+  font-size:13px;padding:8px 0;color:#cfdcf3;
+  border-bottom:1px dashed rgba(120,160,220,.16);
+}
+.sbj-announce-tag{
+  flex:0 0 auto;font-size:11px;font-weight:800;letter-spacing:.1em;
+  padding:3px 9px;border-radius:6px;
+  background:rgba(52,211,153,.16);color:var(--sbj-green);
+  border:1px solid rgba(52,211,153,.35);
+}
+.sbj-announce-track{
+  flex:1;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+  color:var(--sbj-muted);
+}
+.sbj-announce-track b{color:var(--sbj-text);font-weight:600}
+.sbj-announce-link{flex:0 0 auto;color:var(--sbj-blue);font-weight:600;font-size:12.5px}
+
+.sbj-header{display:flex;align-items:center;gap:20px;padding:12px 0}
+.sbj-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.sbj-brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  background:linear-gradient(140deg,#34d399,#3b82f6 70%);
+  display:grid;place-items:center;font-weight:900;font-size:18px;color:#04121a;
+  box-shadow:0 6px 20px -6px rgba(52,211,153,.6);
+}
+.sbj-brand-name{font-size:17px;font-weight:800;letter-spacing:.02em}
+.sbj-brand-sub{font-size:11px;color:var(--sbj-muted);letter-spacing:.2em;text-transform:uppercase}
+.sbj-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.sbj-nav a{
+  font-size:14px;padding:8px 12px;border-radius:9px;color:#c3d2ec;
+  transition:background .18s,color .18s;
+}
+.sbj-nav a:hover{background:rgba(96,165,250,.12);color:#fff}
+.sbj-head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.sbj-search{position:relative}
+.sbj-search input{
+  width:200px;padding:9px 14px 9px 34px;border-radius:999px;
+  background:rgba(255,255,255,.05);border:1px solid var(--sbj-line);
+  color:var(--sbj-text);font-size:13px;outline:none;transition:width .2s,border-color .2s;
+}
+.sbj-search input:focus{width:250px;border-color:rgba(52,211,153,.6)}
+.sbj-search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.6}
+.sbj-search-hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:var(--sbj-panel);border:1px solid var(--sbj-line);border-radius:12px;
+  padding:10px 12px;font-size:12.5px;color:var(--sbj-muted);
+  box-shadow:0 20px 40px -20px #000;display:none;z-index:30;
+}
+.sbj-search-hint.is-on{display:block}
+.sbj-burger{display:none;width:42px;height:42px;border-radius:11px;border:1px solid var(--sbj-line);align-items:center;justify-content:center}
+.sbj-burger span{display:block;width:18px;height:2px;background:var(--sbj-text);position:relative}
+.sbj-burger span::before,.sbj-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--sbj-text)}
+.sbj-burger span::before{top:-6px}
+.sbj-burger span::after{top:6px}
+.sbj-mobile-panel{display:none;padding-bottom:14px}
+.sbj-mobile-panel.is-open{display:block}
+.sbj-mobile-panel a{display:block;padding:10px 12px;border-radius:10px;font-size:14.5px;color:#cdd9ee}
+.sbj-mobile-panel a:hover{background:rgba(96,165,250,.12)}
+
+/* ============ 首屏 4:6 大幅图文 ============ */
+.sbj-hero{padding:44px 0 10px}
+.sbj-hero-grid{
+  display:grid;gap:26px;
+  grid-template-columns:minmax(0,2fr) minmax(0,3fr);
+  align-items:center;
+}
+.sbj-hero-copy h1{
+  font-size:clamp(30px,4.6vw,52px);letter-spacing:.01em;line-height:1.16;
+  background:linear-gradient(100deg,#ffffff 20%,#9de9cf 60%,#8fc2ff 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sbj-hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 14px}
+.sbj-chip{
+  font-size:12px;padding:5px 11px;border-radius:999px;
+  border:1px solid var(--sbj-line);color:#bfd0ec;background:rgba(255,255,255,.03);
+}
+.sbj-chip--live{color:var(--sbj-green);border-color:rgba(52,211,153,.45);background:rgba(52,211,153,.1)}
+.sbj-hero-desc{color:var(--sbj-muted);font-size:15.5px;max-width:520px}
+.sbj-hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.sbj-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px;
+  border-top:1px solid var(--sbj-line);padding-top:18px;
+}
+.sbj-stat-num{font-size:24px;font-weight:900;color:#fff;letter-spacing:.01em}
+.sbj-stat-num em{font-style:normal;font-size:13px;color:var(--sbj-green);margin-left:2px}
+.sbj-stat-label{font-size:12px;color:var(--sbj-muted);letter-spacing:.06em}
+.sbj-hero-visual{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--sbj-line);box-shadow:0 40px 70px -40px #000}
+.sbj-hero-visual img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.sbj-hero-badge{
+  position:absolute;left:16px;bottom:16px;right:16px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  background:rgba(8,15,27,.82);backdrop-filter:blur(8px);
+  border:1px solid var(--sbj-line);border-radius:14px;padding:12px 14px;
+}
+.sbj-hero-badge .t{font-size:13.5px;font-weight:700}
+.sbj-hero-badge .s{font-size:11.5px;color:var(--sbj-muted)}
+.sbj-hero-badge .go{margin-left:auto;font-size:12.5px;color:var(--sbj-green);font-weight:700}
+
+/* ============ 通用卡片 ============ */
+.sbj-card{
+  background:linear-gradient(170deg,rgba(27,43,70,.85),rgba(17,27,46,.9));
+  border:1px solid var(--sbj-line);border-radius:var(--sbj-radius);
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.sbj-card:hover{transform:translateY(-3px);border-color:rgba(96,165,250,.45);box-shadow:0 22px 44px -28px #000}
+.sbj-card-body{padding:16px 18px}
+.sbj-card h3{font-size:16.5px;margin-bottom:6px}
+.sbj-card p{font-size:13.5px;color:var(--sbj-muted);margin-bottom:10px}
+.sbj-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:#8fa3c4}
+.sbj-tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.sbj-tag{font-size:11.5px;color:#9fe6cc;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);padding:2px 8px;border-radius:6px}
+.sbj-tag--blue{color:#a7c8ff;background:rgba(96,165,250,.1);border-color:rgba(96,165,250,.28)}
+
+/* ============ 焦点 + 视频列表 ============ */
+.sbj-focus-grid{display:grid;gap:22px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);margin-top:26px}
+.sbj-focus-main .sbj-card-body{padding:20px 22px}
+.sbj-focus-main h3{font-size:22px}
+.sbj-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px 14px 0 0}
+.sbj-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.sbj-act{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
+  padding:6px 12px;border-radius:999px;border:1px solid var(--sbj-line);color:#c7d6ef;
+  transition:background .16s,border-color .16s,color .16s;
+}
+.sbj-act:hover{background:rgba(96,165,250,.12);border-color:rgba(96,165,250,.45)}
+.sbj-act.is-on{background:rgba(52,211,153,.14);border-color:rgba(52,211,153,.5);color:#9ff0d4}
+.sbj-vlist{display:flex;flex-direction:column;gap:12px}
+.sbj-vitem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:14px 16px;align-items:center}
+.sbj-vitem h4{font-size:14.5px;margin-bottom:4px}
+.sbj-vitem .sum{font-size:12.5px;color:var(--sbj-muted);margin:0 0 6px}
+.sbj-vitem .num{font-size:12px;color:#8ea2c2;white-space:nowrap;text-align:right}
+
+/* ============ 专题 ============ */
+.sbj-topic-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin-top:26px}
+.sbj-topic{display:flex;flex-direction:column;overflow:hidden}
+.sbj-topic img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.sbj-topic .status{font-size:11.5px;color:var(--sbj-green);font-weight:700;margin-bottom:6px;letter-spacing:.06em}
+.sbj-topic-list li{
+  font-size:12.8px;color:#b7c7e0;padding:7px 0;border-top:1px dashed rgba(120,160,220,.16);
+  display:flex;gap:8px;
+}
+.sbj-topic-list li::before{content:"▹";color:var(--sbj-blue)}
+
+/* ============ 品牌解析长文 ============ */
+.sbj-longform{
+  margin-top:26px;display:grid;gap:22px;
+  grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);
+}
+.sbj-article{
+  background:rgba(17,27,46,.7);border:1px solid var(--sbj-line);
+  border-radius:var(--sbj-radius);padding:26px 28px;
+}
+.sbj-article h3{font-size:17.5px;margin:22px 0 8px;color:#eaf3ff}
+.sbj-article h3:first-child{margin-top:0}
+.sbj-article p{font-size:14.5px;color:#b9c9e3;margin-bottom:14px;text-align:justify}
+.sbj-side{
+  display:flex;flex-direction:column;gap:16px;
+}
+.sbj-side-card{padding:18px 20px}
+.sbj-side-card h3{font-size:15px;margin-bottom:10px}
+.sbj-side-list li{font-size:13px;color:#a9bbd8;padding:7px 0;border-bottom:1px dashed rgba(120,160,220,.14);display:flex;justify-content:space-between;gap:10px}
+.sbj-side-list li span:last-child{color:var(--sbj-green);font-weight:700;font-size:12px}
+.sbj-quote{
+  border-left:3px solid var(--sbj-green);padding:10px 0 10px 14px;
+  font-size:13.5px;color:#cfe0f6;background:linear-gradient(90deg,rgba(52,211,153,.08),transparent);
+  border-radius:0 10px 10px 0;
+}
+
+/* ============ 作者双列简介 ============ */
+.sbj-authors{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}
+.sbj-author{display:flex;gap:14px;padding:18px}
+.sbj-avatar{
+  flex:0 0 auto;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+  font-weight:900;font-size:20px;color:#04121a;
+}
+.sbj-author h3{font-size:15.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sbj-author .role{font-size:11.5px;color:var(--sbj-blue);font-weight:600}
+.sbj-author p{font-size:13px;color:var(--sbj-muted);margin:6px 0 0}
+.sbj-author .nums{font-size:11.5px;color:#8ea2c2;margin-top:8px;display:flex;gap:12px;flex-wrap:wrap}
+.sbj-author-link{font-size:12px;color:var(--sbj-green);font-weight:700;margin-top:8px;display:inline-block}
+
+/* ============ 评论 ============ */
+.sbj-comments{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}
+.sbj-comment{padding:16px 18px}
+.sbj-comment .head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.sbj-comment .who{font-size:13.5px;font-weight:700}
+.sbj-comment .when{font-size:11.5px;color:#8ea2c2;margin-left:auto}
+.sbj-comment p{font-size:13.5px;color:#c2d1e7;margin:0}
+.sbj-comment .stars{color:#fbbf24;font-size:12px;letter-spacing:2px}
+.sbj-comment--wide{grid-column:1 / -1}
+
+/* ============ 榜单 ============ */
+.sbj-rank{display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:26px}
+.sbj-rank-col{padding:18px 20px}
+.sbj-rank-col h3{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sbj-rank-col h3 i{
+  font-style:normal;width:22px;height:22px;border-radius:7px;display:grid;place-items:center;
+  font-size:11px;background:rgba(96,165,250,.18);color:#a9c8ff;
+}
+.sbj-rank-col ol{margin:0;padding:0;list-style:none;counter-reset:r}
+.sbj-rank-col li{
+  counter-increment:r;display:flex;gap:10px;font-size:13px;padding:8px 0;
+  border-bottom:1px dashed rgba(120,160,220,.14);color:#c2d1e7;align-items:baseline;
+}
+.sbj-rank-col li::before{
+  content:counter(r);flex:0 0 auto;width:18px;height:18px;border-radius:5px;
+  display:grid;place-items:center;font-size:10.5px;font-weight:800;
+  background:rgba(52,211,153,.14);color:var(--sbj-green);
+}
+.sbj-rank-col li em{font-style:normal;margin-left:auto;font-size:11.5px;color:#8ea2c2}
+
+/* ============ 动态 / 合作 / FAQ ============ */
+.sbj-aux-grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px}
+.sbj-dyn{display:flex;flex-direction:column;gap:0}
+.sbj-dyn li{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed rgba(120,160,220,.14);font-size:13.5px;color:#c2d1e7}
+.sbj-dyn li time{flex:0 0 78px;color:var(--sbj-blue);font-size:12px;font-weight:700}
+.sbj-partners{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.sbj-partner{
+  font-size:12.5px;padding:8px 14px;border-radius:10px;
+  border:1px solid var(--sbj-line);color:#bdcee8;background:rgba(255,255,255,.03);
+}
+.sbj-faq details{
+  border:1px solid var(--sbj-line);border-radius:12px;padding:12px 16px;margin-bottom:10px;
+  background:rgba(17,27,46,.6);
+}
+.sbj-faq summary{
+  cursor:pointer;font-size:14px;font-weight:700;list-style:none;display:flex;align-items:center;gap:8px;
+}
+.sbj-faq summary::-webkit-details-marker{display:none}
+.sbj-faq summary::before{content:"+";color:var(--sbj-green);font-weight:900;font-size:17px}
+.sbj-faq details[open] summary::before{content:"–"}
+.sbj-faq details p{font-size:13.5px;color:var(--sbj-muted);margin:10px 0 0}
+
+/* ============ 投稿 ============ */
+.sbj-submit{
+  margin-top:26px;padding:26px 28px;border-radius:20px;
+  background:linear-gradient(120deg,rgba(52,211,153,.14),rgba(96,165,250,.14));
+  border:1px solid rgba(96,165,250,.3);
+  display:flex;gap:20px;align-items:center;flex-wrap:wrap;
+}
+.sbj-submit h3{font-size:19px}
+.sbj-submit p{font-size:13.5px;color:var(--sbj-muted);margin:6px 0 0;max-width:640px}
+.sbj-submit .sbj-btn{margin-left:auto}
+
+/* ============ 页脚 ============ */
+.sbj-footer{
+  margin-top:56px;border-top:1px solid var(--sbj-line);
+  background:rgba(6,12,22,.7);padding:40px 0 26px;
+}
+.sbj-foot-grid{display:grid;gap:26px;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr))}
+.sbj-foot-grid h3{font-size:13.5px;margin-bottom:12px;color:#fff;letter-spacing:.06em}
+.sbj-foot-grid li{font-size:12.8px;color:var(--sbj-muted);padding:4px 0}
+.sbj-foot-brand p{font-size:12.8px;color:var(--sbj-muted);max-width:320px}
+.sbj-foot-bottom{
+  margin-top:26px;padding-top:18px;border-top:1px dashed rgba(120,160,220,.18);
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12px;color:#8296b5;
+}
+
+/* ============ Toast / 弹窗 / 回顶 ============ */
+.sbj-toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);
+  background:#0f1c30;border:1px solid rgba(52,211,153,.45);color:#d8f7ec;
+  padding:11px 20px;border-radius:999px;font-size:13px;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:300;
+  box-shadow:0 18px 40px -18px #000;
+}
+.sbj-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.sbj-modal{
+  position:fixed;inset:0;z-index:400;display:none;
+  align-items:center;justify-content:center;padding:20px;
+  background:rgba(3,8,16,.72);backdrop-filter:blur(6px);
+}
+.sbj-modal.is-on{display:flex}
+.sbj-modal-box{
+  width:min(480px,100%);background:#101c2f;border:1px solid var(--sbj-line);
+  border-radius:18px;padding:24px 26px;box-shadow:0 40px 80px -30px #000;
+  max-height:86vh;overflow:auto;
+}
+.sbj-modal-box h3{font-size:18px;margin-bottom:8px}
+.sbj-modal-box p{font-size:13.5px;color:var(--sbj-muted)}
+.sbj-modal-box label{display:block;font-size:12.5px;color:#a9bbd8;margin:12px 0 5px}
+.sbj-modal-box input,.sbj-modal-box textarea{
+  width:100%;padding:10px 12px;border-radius:10px;font-size:13.5px;
+  background:rgba(255,255,255,.05);border:1px solid var(--sbj-line);
+  color:var(--sbj-text);outline:none;font-family:inherit;resize:vertical;
+}
+.sbj-modal-box input:focus,.sbj-modal-box textarea:focus{border-color:rgba(52,211,153,.55)}
+.sbj-modal-foot{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+.sbj-totop{
+  position:fixed;right:22px;bottom:24px;z-index:200;
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  background:rgba(17,27,46,.92);border:1px solid var(--sbj-line);color:#cfe0f6;
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;
+}
+.sbj-totop.is-on{opacity:1;pointer-events:auto}
+.sbj-totop:hover{transform:translateY(-3px);border-color:rgba(52,211,153,.5)}
+
+@media (max-width:980px){
+  .sbj-hero-grid{grid-template-columns:1fr}
+  .sbj-focus-grid{grid-template-columns:1fr}
+  .sbj-longform{grid-template-columns:1fr}
+  .sbj-authors{grid-template-columns:1fr}
+  .sbj-comments{grid-template-columns:1fr}
+  .sbj-rank{grid-template-columns:1fr}
+  .sbj-foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .sbj-nav,.sbj-search{display:none}
+  .sbj-burger{display:flex}
+  .sbj-aux-grid{grid-template-columns:1fr}
+  .sbj-hero{padding-top:30px}
+  .sbj-article{padding:20px}
+  .sbj-submit .sbj-btn{margin-left:0}
+  .sbj-foot-grid{grid-template-columns:1fr}
+  .sbj-stat-num{font-size:20px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sbj-sticky" id="sbjTop">
+  <div class="sbj-wrap">
+    <div class="sbj-announce">
+      <span class="sbj-announce-tag">官方发布</span>
+      <div class="sbj-announce-track"><b>11 月新片单已上线：</b>《城市暗角·六城夜行记》系列 4 集全部更新 · 新人创作者扶持计划第 3 期开放报名 · 站内专题「小空间大世界」同步上线</div>
+      <a class="sbj-announce-link" href="#sbjUpdates">查看详情 →</a>
+    </div>
+    <header class="sbj-header">
+      <a class="sbj-brand" href="#sbjTop">
+        <span class="sbj-brand-mark">秘</span>
+        <span>
+          <span class="sbj-brand-name">秘密基地导航发布</span>
+          <span class="sbj-brand-sub">Secret Base · Video Portal</span>
+        </span>
+      </a>
+      <nav class="sbj-nav" aria-label="主导航">
+        <a href="#sbjFocus">焦点内容</a>
+        <a href="#sbjVideos">视频社区</a>
+        <a href="#sbjTopics">专题企划</a>
+        <a href="#sbjInsight">品牌解析</a>
+        <a href="#sbjAuthors">创作者</a>
+        <a href="#sbjRank">榜单</a>
+        <a href="#sbjUpdates">企业动态</a>
+        <a href="#sbjFaq">帮助</a>
+      </nav>
+      <div class="sbj-head-tools">
+        <div class="sbj-search" id="sbjSearch">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="sbjSearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索">
+          <div class="sbj-search-hint" id="sbjSearchHint">试试「夜行」「手艺人」「小空间」等关键词</div>
+        </div>
+        <button class="sbj-btn sbj-btn--sm" data-sbj-modal="submit">我要投稿</button>
+        <button class="sbj-burger" id="sbjBurger" aria-label="展开导航" aria-expanded="false"><span></span></button>
+      </div>
+    </header>
+    <div class="sbj-mobile-panel" id="sbjMobilePanel">
+      <a href="#sbjFocus">焦点内容</a>
+      <a href="#sbjVideos">视频社区</a>
+      <a href="#sbjTopics">专题企划</a>
+      <a href="#sbjInsight">品牌解析</a>
+      <a href="#sbjAuthors">创作者</a>
+      <a href="#sbjRank">榜单</a>
+      <a href="#sbjUpdates">企业动态</a>
+      <a href="#sbjFaq">帮助</a>
+      <a href="#" data-sbj-modal="submit">我要投稿</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ 首屏 ============ -->
+  <section class="sbj-hero" id="sbjHero">
+    <div class="sbj-wrap">
+      <div class="sbj-hero-grid">
+        <div class="sbj-hero-copy">
+          <span class="sbj-eyebrow">Official Video Brand</span>
+          <h1>秘密基地导航发布</h1>
+          <div class="sbj-hero-badges">
+            <span class="sbj-chip sbj-chip--live">官网直营</span>
+            <span class="sbj-chip">原创高清</span>
+            <span class="sbj-chip">创作者社区</span>
+            <span class="sbj-chip">持续运营 6 年</span>
+          </div>
+          <p class="sbj-hero-desc">
+            秘密基地导航发布是一家专注城市影像与在地生活记录的视频品牌。我们把镜头交给创作者，把入口交给观众：从深夜便利店到顶楼天台，从手艺人工作台到陌生人的客厅，每个被忽略的角落，都值得被认真拍下来。这里是官方网站首发渠道，所有精品内容均为正版高清呈现。
+          </p>
+          <div class="sbj-hero-cta">
+            <a class="sbj-btn" href="#sbjVideos">进入视频社区</a>
+            <a class="sbj-btn sbj-btn--ghost" href="#sbjTopics">看本月专题</a>
+            <button class="sbj-btn sbj-btn--ghost" data-sbj-modal="submit">成为创作者</button>
+          </div>
+          <div class="sbj-stats">
+            <div>
+              <div class="sbj-stat-num">3,860<em>+</em></div>
+              <div class="sbj-stat-label">原创视频储备</div>
+            </div>
+            <div>
+              <div class="sbj-stat-num">286<em>位</em></div>
+              <div class="sbj-stat-label">签约创作者</div>
+            </div>
+            <div>
+              <div class="sbj-stat-num">9.4<em>分</em></div>
+              <div class="sbj-stat-label">用户口碑评分</div>
+            </div>
+          </div>
+        </div>
+        <div class="sbj-hero-visual">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2308203a'/%3E%3Cstop offset='55%25' stop-color='%23143b5c'/%3E%3Cstop offset='100%25' stop-color='%232a1e3f'/%3E%3C/linearGradient%3E%3ClinearGradient id='win' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd98a'/%3E%3Cstop offset='100%25' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3ClinearGradient id='floor' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2b43'/%3E%3Cstop offset='100%25' stop-color='%23081a2b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='640' cy='96' r='46' fill='%23e6f0ff' opacity='.18'/%3E%3Ccircle cx='640' cy='96' r='26' fill='%23f4f9ff' opacity='.5'/%3E%3Cg opacity='.9'%3E%3Crect x='40' y='250' width='110' height='250' fill='%2313283f'/%3E%3Crect x='160' y='200' width='90' height='300' fill='%230f2237'/%3E%3Crect x='260' y='290' width='120' height='210' fill='%23162f49'/%3E%3Crect x='600' y='230' width='150' height='270' fill='%230f2237'/%3E%3C/g%3E%3Cg fill='url(%23win)' opacity='.85'%3E%3Crect x='56' y='270' width='16' height='22' rx='2'/%3E%3Crect x='84' y='270' width='16' height='22' rx='2'/%3E%3Crect x='56' y='306' width='16' height='22' rx='2'/%3E%3Crect x='176' y='224' width='14' height='18' rx='2'/%3E%3Crect x='202' y='224' width='14' height='18' rx='2'/%3E%3Crect x='176' y='256' width='14' height='18' rx='2'/%3E%3Crect x='618' y='252' width='18' height='24' rx='2'/%3E%3Crect x='650' y='252' width='18' height='24' rx='2'/%3E%3Crect x='682' y='252' width='18' height='24' rx='2'/%3E%3Crect x='618' y='292' width='18' height='24' rx='2'/%3E%3Crect x='682' y='292' width='18' height='24' rx='2'/%3E%3C/g%3E%3Crect x='0' y='470' width='800' height='80' fill='url(%23floor)'/%3E%3Cpath d='M0 470 Q200 440 400 468 T800 462 L800 550 L0 550 Z' fill='%230a1d2f'/%3E%3Cg%3E%3Crect x='330' y='380' width='140' height='90' rx='10' fill='%231a3a55' stroke='%2334d399' stroke-width='3'/%3E%3Ccircle cx='400' cy='425' r='20' fill='none' stroke='%2334d399' stroke-width='3'/%3E%3Cpath d='M393 415 L412 425 L393 435 Z' fill='%2334d399'/%3E%3C/g%3E%3Cg opacity='.7'%3E%3Cpath d='M120 550 L180 470 L240 550 Z' fill='%231a3a55'/%3E%3Cpath d='M560 550 L620 478 L680 550 Z' fill='%231a3a55'/%3E%3C/g%3E%3Cg stroke='%2360a5fa' stroke-width='2' opacity='.55'%3E%3Cpath d='M40 60 L200 60'/%3E%3Cpath d='M40 74 L150 74'/%3E%3C/g%3E%3Cg fill='%2334d399' opacity='.8'%3E%3Ccircle cx='470' cy='120' r='4'/%3E%3Ccircle cx='520' cy='170' r='3'/%3E%3Ccircle cx='430' cy='200' r='3.5'/%3E%3C/g%3E%3C/svg%3E" alt="秘密基地导航发布首屏主视觉：夜色城市楼群与发光的放映屏幕">
+          <div class="sbj-hero-badge">
+            <div>
+              <div class="t">本周首发 · 六城夜行记 第 4 集</div>
+              <div class="s">探访凌晨两点的天台放映会</div>
+            </div>
+            <span class="go">立即观看 →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点内容 ============ -->
+  <section class="sbj-section" id="sbjFocus">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Focus Selection</span>
+      <h2 class="sbj-h2">焦点内容 <small>编辑部本周推选 / 秘密基地导航发布官方精选</small></h2>
+      <p class="sbj-lead">每一期焦点都由官方内容团队与社区投票共同决定。我们只推荐真正拍完、剪完、愿意署名的作品——这是秘密基地导航发布对原创与品质的基本要求。</p>
+      <div class="sbj-focus-grid">
+        <article class="sbj-card sbj-focus-main">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 405'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23111f36'/%3E%3Cstop offset='1' stop-color='%2323435e'/%3E%3C/linearGradient%3E%3ClinearGradient id='a2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2334d399'/%3E%3Cstop offset='1' stop-color='%2360a5fa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='405' fill='url(%23a1)'/%3E%3Cg stroke='%2360a5fa' stroke-width='1.6' opacity='.5'%3E%3Cpath d='M60 330 L160 190 L260 300 L360 150 L470 280 L580 170 L680 300' fill='none'/%3E%3C/g%3E%3Cg stroke='%2334d399' stroke-width='1.2' opacity='.35'%3E%3Cpath d='M0 360 Q180 300 360 350 T720 330' fill='none'/%3E%3Cpath d='M0 385 Q180 330 360 375 T720 355' fill='none'/%3E%3C/g%3E%3Crect x='80' y='80' width='220' height='132' rx='12' fill='%230a1a2c' stroke='%2334d399' stroke-width='2'/%3E%3Ccircle cx='190' cy='146' r='24' fill='none' stroke='url(%23a2)' stroke-width='3'/%3E%3Cpath d='M182 134 L206 146 L182 158 Z' fill='%2334d399'/%3E%3Cg fill='%23cfe0f6' opacity='.85'%3E%3Crect x='420' y='96' width='210' height='12' rx='6'/%3E%3Crect x='420' y='124' width='160' height='10' rx='5' opacity='.6'/%3E%3Crect x='420' y='150' width='186' height='10' rx='5' opacity='.45'/%3E%3C/g%3E%3Cg opacity='.8'%3E%3Ccircle cx='600' cy='300' r='40' fill='%23f59e0b' opacity='.25'/%3E%3Ccircle cx='600' cy='300' r='22' fill='%23fbbf24' opacity='.5'/%3E%3C/g%3E%3C/svg%3E" alt="焦点视频《凌晨天台放映会》封面：城市天际线与播放符号">
+          <div class="sbj-card-body">
+            <div class="sbj-tagrow">
+              <span class="sbj-tag">城市探索</span>
+              <span class="sbj-tag sbj-tag--blue">深度记录</span>
+              <span class="sbj-tag">首发</span>
+            </div>
+            <h3>凌晨天台放映会：一群人在楼顶看了三年电影</h3>
+            <p>没有排片表，没有售票口，只有一块 3 米幕布和一台二手投影。这支 24 分钟的纪录短片跟拍了这个自发组织三年的天台放映小组，也拍下了城市夜晚最难被看见的温柔。</p>
+            <div class="sbj-meta"><span>创作者：老周不睡</span><span>播放 42.6 万</span><span>点赞 3.8 万</span><span>收藏 1.2 万</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>3.8万</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="sbj-card" style="padding:18px 20px">
+          <h3 style="font-size:15px;margin-bottom:12px">同批次重点推荐</h3>
+          <ul class="sbj-vlist">
+            <li class="sbj-vitem" style="background:rgba(96,165,250,.06);border:1px solid var(--sbj-line);border-radius:12px">
+              <div>
+                <h4>把 4 平米储藏间改成手作工作室</h4>
+                <p class="sum">从测量到完工的 41 天，木工与灯光的全部细节。</p>
+                <div class="sbj-meta"><span>木下阿岚</span><span>播放 18.3 万</span></div>
+              </div>
+              <div class="num">3 集<br>连载中</div>
+            </li>
+            <li class="sbj-vitem" style="background:rgba(52,211,153,.06);border:1px solid var(--sbj-line);border-radius:12px">
+              <div>
+                <h4>城市消失的 12 种声音</h4>
+                <p class="sum">打字机、老式电梯、手摇电话铃与街角爆米花机。</p>
+                <div class="sbj-meta"><span>声场小组</span><span>播放 27.9 万</span></div>
+              </div>
+              <div class="num">纪录<br>短片</div>
+            </li>
+            <li class="sbj-vitem" style="background:rgba(251,191,36,.06);border:1px solid var(--sbj-line);border-radius:12px">
+              <div>
+                <h4>跟一位修表师傅过完一个下午</h4>
+                <p class="sum">3000 个零件，52 年手工，和一个不愿关店的柜台。</p>
+                <div class="sbj-meta"><span>陈叙</span><span>播放 15.1 万</span></div>
+              </div>
+              <div class="num">人物<br>访谈</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 视频社区（单列图文列表） ============ -->
+  <section class="sbj-section" id="sbjVideos">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Community Stream</span>
+      <h2 class="sbj-h2">视频社区 <small>秘密基地导航发布原创内容持续更新中</small></h2>
+      <p class="sbj-lead">社区每周更新 20 支以上原创视频，涵盖经验分享、创作幕后、实用技巧与治愈影像。所有条目均标注创作者、标签与互动数据，方便你按兴趣深挖。</p>
+      <div class="sbj-vlist" style="margin-top:26px">
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>第一次拍 Vlog 别踩这 9 个坑：从收音到收尾的实操攻略</h4>
+            <p class="sum">从器材搭配、现场收音、空镜补拍到粗剪节奏，一份给新人的完整操作清单。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">教程干货</span><span class="sbj-tag sbj-tag--blue">新手友好</span></div>
+            <div class="sbj-meta"><span>创作者：小满在路上</span><span>播放 31.4 万</span><span>点赞 2.6 万</span><span>收藏 9800</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>2.6万</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">教程<br>12:40</div>
+        </article>
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>手作人的工作台：一张桌子如何被用了 11 年</h4>
+            <p class="sum">工具墙的排列逻辑、被磨圆的桌角、以及从学徒到独立开店的这些年。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">手作 DIY</span><span class="sbj-tag sbj-tag--blue">创作幕后</span></div>
+            <div class="sbj-meta"><span>创作者：木下阿岚</span><span>播放 12.7 万</span><span>点赞 1.1 万</span><span>收藏 6300</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>1.1万</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">幕后<br>08:55</div>
+        </article>
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>深夜便利店观察笔记：凌晨 1 点到 4 点都会遇到谁</h4>
+            <p class="sum">夜班店员、代驾司机、赶论文的学生——一支安静的观察式短片。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">日常记录</span><span class="sbj-tag sbj-tag--blue">城市探索</span></div>
+            <div class="sbj-meta"><span>创作者：老周不睡</span><span>播放 26.8 万</span><span>点赞 2.2 万</span><span>收藏 1.4 万</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>2.2万</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">纪录<br>15:20</div>
+        </article>
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>三人小组如何在一周内做完一支 5 分钟短片</h4>
+            <p class="sum">把预算拆成 12 项、把拍摄压缩到 2 天，完整流程与踩坑复盘全部公开。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">经验分享</span><span class="sbj-tag sbj-tag--blue">团队协作</span></div>
+            <div class="sbj-meta"><span>创作者：迟到的光</span><span>播放 9.6 万</span><span>点赞 8400</span><span>收藏 5200</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>8400</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">复盘<br>18:05</div>
+        </article>
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>宠物视角的一整天：给它戴了台小相机之后</h4>
+            <p class="sum">6 小时的素材浓缩成 6 分钟，猫眼里的家和猫眼外的我们。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">萌宠日常</span><span class="sbj-tag sbj-tag--blue">治愈影像</span></div>
+            <div class="sbj-meta"><span>创作者：苏苏和苏打</span><span>播放 38.2 万</span><span>点赞 4.1 万</span><span>收藏 2.3 万</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>4.1万</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">治愈<br>06:12</div>
+        </article>
+        <article class="sbj-card sbj-vitem">
+          <div>
+            <h4>旧相机复活计划：给 1987 年的镜头做一次全面保养</h4>
+            <p class="sum">拆解、除霉、润滑、标定，一台老镜头重新上机的全过程。</p>
+            <div class="sbj-tagrow"><span class="sbj-tag">实用技巧</span><span class="sbj-tag sbj-tag--blue">器材</span></div>
+            <div class="sbj-meta"><span>创作者：陈叙</span><span>播放 7.9 万</span><span>点赞 7100</span><span>收藏 4600</span></div>
+            <div class="sbj-actions">
+              <button class="sbj-act" data-sbj-like aria-pressed="false">♡ 点赞 <b>7100</b></button>
+              <button class="sbj-act" data-sbj-fav aria-pressed="false">☆ 收藏</button>
+              <button class="sbj-act" data-sbj-copy>复制链接</button>
+              <button class="sbj-act" data-sbj-modal="share">分享</button>
+            </div>
+          </div>
+          <div class="num">技巧<br>21:30</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="sbj-section" id="sbjTopics">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Special Projects</span>
+      <h2 class="sbj-h2">专题企划 <small>围绕秘密基地导航发布关键词的长期内容项目</small></h2>
+      <p class="sbj-lead">专题是秘密基地导航发布的内容骨架。我们用 3 到 8 集的篇幅把一个话题讲透，也把话语权交给不同城市、不同职业的创作者。</p>
+      <div class="sbj-topic-grid">
+        <article class="sbj-card sbj-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1d30'/%3E%3Cstop offset='1' stop-color='%231f3a52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23t1)'/%3E%3Cg stroke='%2334d399' stroke-width='1.5' opacity='.7' fill='none'%3E%3Cpath d='M40 220 L120 160 L200 200 L280 130 L360 180 L440 110'/%3E%3C/g%3E%3Cg fill='%2334d399' opacity='.9'%3E%3Ccircle cx='120' cy='160' r='5'/%3E%3Ccircle cx='200' cy='200' r='5'/%3E%3Ccircle cx='280' cy='130' r='5'/%3E%3Ccircle cx='360' cy='180' r='5'/%3E%3Ccircle cx='440' cy='110' r='5'/%3E%3C/g%3E%3Cg fill='%2360a5fa' opacity='.35'%3E%3Crect x='40' y='60' width='120' height='56' rx='8'/%3E%3Crect x='180' y='60' width='80' height='56' rx='8'/%3E%3C/g%3E%3Ctext x='56' y='94' font-family='Arial' font-size='15' fill='%23e6f0ff' opacity='.8'%3ENIGHT WALK%3C/text%3E%3C/svg%3E" alt="专题《六城夜行记》封面：夜色中的路线折线与城市节点">
+          <div class="sbj-card-body">
+            <div class="status">● 连载中 · 已更新 4 / 6 集</div>
+            <h3>六城夜行记</h3>
+            <p>六个城市、六个夜晚、六位本地创作者。我们只提出一个要求：拍到凌晨三点之后还在发生的事。</p>
+            <ul class="sbj-topic-list">
+              <li>第 1 集：江边夜市收摊前的最后 40 分钟</li>
+              <li>第 2 集：24 小时洗衣店里的人生切片</li>
+              <li>第 3 集：天桥上卖手冲的年轻人</li>
+            </ul>
+          </div>
+        </article>
+        <article class="sbj-card sbj-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23142133'/%3E%3Cg opacity='.9'%3E%3Crect x='60' y='90' width='120' height='120' rx='8' fill='%230d1a2a' stroke='%23fbbf24' stroke-width='2'/%3E%3Crect x='200' y='110' width='120' height='100' rx='8' fill='%23123a4a' stroke='%2334d399' stroke-width='2'/%3E%3Crect x='340' y='70' width='90' height='140' rx='8' fill='%232a1e3f' stroke='%2360a5fa' stroke-width='2'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='.55'%3E%3Crect x='78' y='112' width='84' height='10' rx='5'/%3E%3Crect x='78' y='136' width='60' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%2334d399' opacity='.5'%3E%3Crect x='218' y='132' width='84' height='10' rx='5'/%3E%3Crect x='218' y='156' width='52' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%2360a5fa' opacity='.45'%3E%3Crect x='356' y='92' width='58' height='8' rx='4'/%3E%3Crect x='356' y='112' width='58' height='8' rx='4'/%3E%3Crect x='356' y='132' width='40' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="专题《小空间大世界》封面：三种不同尺寸的房间平面示意">
+          <div class="sbj-card-body">
+            <div class="status">● 更新至第 5 期 · 长期专栏</div>
+            <h3>小空间大世界</h3>
+            <p>出租屋、储藏间、阁楼、阳台——小空间里的改造智慧与生活秩序。每一期都由屋主自己讲述。</p>
+            <ul class="sbj-topic-list">
+              <li>第 4 期：4 平米储藏间的手作改造</li>
+              <li>第 5 期：8 平方的阳台四季种植计划</li>
+              <li>第 6 期：墙里藏着 200 本书的单身公寓</li>
+            </ul>
+          </div>
+        </article>
+        <article class="sbj-card sbj-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230e1a2b'/%3E%3Cg stroke='%23cfe0f6' stroke-width='2' opacity='.35' fill='none'%3E%3Ccircle cx='240' cy='135' r='90'/%3E%3Ccircle cx='240' cy='135' r='58'/%3E%3Ccircle cx='240' cy='135' r='28'/%3E%3C/g%3E%3Cg stroke='%2334d399' stroke-width='2' opacity='.9'%3E%3Cpath d='M240 45 L240 95'/%3E%3Cpath d='M240 175 L240 225'/%3E%3Cpath d='M150 135 L200 135'/%3E%3Cpath d='M280 135 L330 135'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='.8'%3E%3Ccircle cx='240' cy='135' r='10'/%3E%3C/g%3E%3Cg fill='%2360a5fa' opacity='.5'%3E%3Crect x='30' y='30' width='90' height='8' rx='4'/%3E%3Crect x='360' y='232' width='90' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="专题《声音地图》封面：同心圆与方向线组成的声音采集示意">
+          <div class="sbj-card-body">
+            <div class="status">● 已完结 · 共 3 集</div>
+            <h3>城市声音地图</h3>
+            <p>用耳朵重新认识一座城。从菜市场到旧车站，我们记录那些正在消失的、属于日常的声音风景。</p>
+            <ul class="sbj-topic-list">
+              <li>第 1 集：老式电梯的机械呼吸</li>
+              <li>第 2 集：修表柜台前的嘀嗒声场</li>
+              <li>第 3 集：街角爆米花机与人群围观</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌解析长文 ============ -->
+  <section class="sbj-section" id="sbjInsight">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Deep Insight</span>
+      <h2 class="sbj-h2">品牌解析 <small>秘密基地导航发布是怎么被做出来的</small></h2>
+      <div class="sbj-longform">
+        <article class="sbj-article">
+          <h3>一、从“找不到聚合入口”开始的品牌起点</h3>
+          <p>秘密基地导航发布最初并不是一个视频品牌，而是一份持续更新的文档。2019 年前后，城市里出现了大量风格鲜明却极其分散的独立影像作品：有人只在自己的社交账号发一支片子就不再更新，有人把整组素材留在硬盘里从不导出，还有人拍完就删，理由是“不够好”。我们当时做的事情很笨，就是把这些零散的内容一条条找出来，建立索引、标注城市与主题、打电话征求作者授权，然后整理成一个可以稳定访问的导航页面。这份文档后来成了秘密基地导航发布官网最早的雏形，也奠定了品牌至今仍在坚持的两件事：一是把入口做清楚，二是把作者名字放在最显眼的位置。</p>
+          <p>随着索引条目从几十条增长到上千条，我们开始意识到，单纯的链接聚合无法解决创作者真正的困难。一个人拍完片子之后，缺少的是选题反馈、剪辑建议、发行节奏和持续的收入结构。于是团队从 2021 年起转向自建内容平台：签约创作者、投入后期资源、建立审核与首发机制，把“导航”升级为“发布”。这也是品牌名称中两个动作的由来——先导航，再发布。对观众而言，这里是找片子最省时间的地方；对创作者而言，这里是一条从想法到成片的完整通道。</p>
+          <h3>二、内容生态：为什么我们坚持“慢更新”</h3>
+          <p>秘密基地导航发布目前每周更新 20 至 30 支原创视频，这个数字在短视频行业并不算高，但每一支都经过完整的三道流程：作者自审、编辑复审、上线前的事实核对。我们不追求日更，因为绝大多数值得被记录的故事需要时间。以《六城夜行记》为例，从确定城市、联系本地创作者、踩点、拍摄到剪辑完成，第一集就花了 47 天。团队内部一度争论是否要把节奏加快，最后的结论是：把集数从 12 集压到 6 集，把周期留给内容。这种节奏带来了实际收益——该专题上线后，完播率是站内平均值的 1.8 倍，收藏率接近 3 倍。</p>
+          <p>在内容结构上，我们把社区内容分为四个明确的层：日常记录、经验分享、深度专题与人物访谈。四个层级承担不同职能，日常记录维持社区活跃度，经验分享承担实用价值，深度专题建立品牌影响力，人物访谈沉淀长期资产。每一层都有独立的编辑负责人和选题池，避免出现某一类内容过大、其他类型被挤压的情况。这种分层管理的直接结果是，秘密基地导航发布的内容生态在六年里保持了相对稳定的多样性，没有因为某一类题材的短期热度而失衡。</p>
+          <h3>三、创作者机制：从投稿到签约的完整路径</h3>
+          <p>任何用户都可以通过投稿入口提交作品。投稿后 72 小时内会收到一封具体到时间的反馈，而不是模板化的“感谢参与”。如果作品具备潜力但完成度不足，编辑部会给出三条以内的修改建议，并邀请作者参加每月一次的线上剪辑工作坊。这是秘密基地导航发布与其他平台差别最大的地方：我们不把投稿当成流量入口，而是当成人才通道。六年来，通过这条通道进入签约名单的创作者共有 286 位，其中约三分之一是完全没有商业拍摄经验的素人。</p>
+          <p>签约之后，创作者可以获得后期支持、器材借用、字幕与调色协助，以及按季度结算的保底与分成。我们同样允许创作者把作品分发到其他平台，唯一的要求是注明首发渠道。这种做法看上去放弃了独占性，但实际数据表明，允许分发反而提高了作品的二次传播效率，也为品牌带来了更稳定的口碑。用户至上是秘密基地导航发布在内部反复强调的原则，但我们对“用户”的定义包含两部分：看片子的人和拍片子的人。任何只照顾一方的机制，长期都会失衡。</p>
+          <h3>四、品质与口碑：可以被检验的标准</h3>
+          <p>“高清”和“精品内容”这类词在行业里被用得太随意，所以我们把品质拆成了可检验的条目：画面分辨率不低于 1080p、音频需经过响度标准化、字幕必须人工校对、片头片尾时长不超过 8 秒、所有素材版权可追溯。这些标准写在上传说明里，也写在每一份签约合同里。上传环节会自动提示不符合项，人工复审会再做一次抽查。正因为标准清楚，社区里关于画质与字幕的投诉量在过去两年下降了 64%。</p>
+          <p>口碑的另一个来源是透明度。秘密基地导航发布每季度发布一次内容运营报告，公开更新数量、专题进度、创作者收入区间与用户反馈处理结果。报告不美化数据，也公布未达标的项目。我们认为，一个持续运营六年的视频品牌，最值得被信赖的不是某一支爆款，而是这种可以被核对的一致性。行业领先从来不是自我宣称的结果，而是由一个个具体动作累积出来的印象。</p>
+        </article>
+        <aside class="sbj-side">
+          <div class="sbj-card sbj-side-card">
+            <h3>品牌关键词速览</h3>
+            <ul class="sbj-side-list">
+              <li><span>官方网站</span><span>已备案</span></li>
+              <li><span>原创视频</span><span>3,860+</span></li>
+              <li><span>签约创作者</span><span>286 位</span></li>
+              <li><span>深度专题</span><span>41 个</span></li>
+              <li><span>覆盖城市</span><span>23 座</span></li>
+              <li><span>季度运营报告</span><span>持续公开</span></li>
+            </ul>
+          </div>
+          <div class="sbj-card sbj-side-card">
+            <h3>团队信条</h3>
+            <p class="sbj-quote">“先让人被看见，再让片子被看见。秘密基地导航发布的所有规则，都是从这句话推出来的。”</p>
+            <p style="font-size:12.5px;color:var(--sbj-muted);margin:10px 0 0">—— 内容委员会 · 2026 年秋季修订</p>
+          </div>
+          <div class="sbj-card sbj-side-card">
+            <h3>合作与授权</h3>
+            <p style="font-size:13px;color:var(--sbj-muted)">转载、商用授权、线下放映合作，请通过官方投稿通道提交说明，我们会在 5 个工作日内回复具体方案与报价区间。</p>
+            <button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-modal="contact" style="margin-top:6px">联系合作</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵 ============ -->
+  <section class="sbj-section" id="sbjAuthors">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Creators</span>
+      <h2 class="sbj-h2">创作者矩阵 <small>秘密基地导航发布签约作者 / 双列简介</small></h2>
+      <p class="sbj-lead">他们来自不同城市与职业，共同点是愿意为一段画面反复修改到凌晨。点击作者卡片可查看更完整的档案。</p>
+      <div class="sbj-authors">
+        <article class="sbj-card sbj-author" data-sbj-author="老周不睡|城市夜行记录者，签约 4 年，擅长用长镜头保留现场感。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#34d399,#0ea5a4)">周</div>
+          <div>
+            <h3>老周不睡 <span class="role">城市探索</span></h3>
+            <p>拍了七年城市夜晚，习惯在凌晨出门，随身只带一台小机器。他的片子很少配乐，多数时候只有环境声。喜欢在片尾放一段没有剪掉的路人对话，认为那才是最真实的部分。</p>
+            <div class="nums"><span>作品 68</span><span>粉丝 24.6 万</span><span>获赞 91 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="老周不睡|城市夜行记录者，签约 4 年，擅长用长镜头保留现场感。">查看档案 →</a>
+          </div>
+        </article>
+        <article class="sbj-card sbj-author" data-sbj-author="木下阿岚|手作与空间改造创作者，专注小空间里的木工与灯光。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#fbbf24,#f97316)">岚</div>
+          <div>
+            <h3>木下阿岚 <span class="role">手作 DIY</span></h3>
+            <p>从建筑系毕业后做了五年家具，现在专门拍改造过程。她的视频节奏偏慢，但每个步骤都有明确原理说明，被不少观众当作改造教科书反复观看。</p>
+            <div class="nums"><span>作品 52</span><span>粉丝 18.3 万</span><span>获赞 63 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="木下阿岚|手作与空间改造创作者，专注小空间里的木工与灯光。">查看档案 →</a>
+          </div>
+        </article>
+        <article class="sbj-card sbj-author" data-sbj-author="小满在路上|影像教程作者，擅长把复杂流程拆成可执行的清单。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#60a5fa,#3b82f6)">满</div>
+          <div>
+            <h3>小满在路上 <span class="role">教程干货</span></h3>
+            <p>前广告公司制片，现在专职做影像教学。她的特点是拒绝玄学，所有建议都附实际拍摄数据与前后对比。频道里最受欢迎的是“第一次拍摄避坑”系列。</p>
+            <div class="nums"><span>作品 94</span><span>粉丝 31.7 万</span><span>获赞 120 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="小满在路上|影像教程作者，擅长把复杂流程拆成可执行的清单。">查看档案 →</a>
+          </div>
+        </article>
+        <article class="sbj-card sbj-author" data-sbj-author="陈叙|人物访谈与器物记录者，关注手艺人的日常。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#a78bfa,#6366f1)">叙</div>
+          <div>
+            <h3>陈叙 <span class="role">人物访谈</span></h3>
+            <p>做过五年记者，习惯先聊三小时再开机。他的访谈很少打断对方，剪辑上保留了大量停顿和沉默。他觉得那些不说话的几秒，往往比回答更能说明问题。</p>
+            <div class="nums"><span>作品 41</span><span>粉丝 12.9 万</span><span>获赞 47 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="陈叙|人物访谈与器物记录者，关注手艺人的日常。">查看档案 →</a>
+          </div>
+        </article>
+        <article class="sbj-card sbj-author" data-sbj-author="苏苏和苏打|萌宠与治愈影像创作者，和一只猫共同生活。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#f472b6,#ec4899)">苏</div>
+          <div>
+            <h3>苏苏和苏打 <span class="role">治愈影像</span></h3>
+            <p>本职是插画师，业余拍猫。她的片子几乎没有剧情，只是把日常片段按时间顺序排好。她说自己拍的不是猫，是“一个家里安静下来的那部分时刻”。</p>
+            <div class="nums"><span>作品 76</span><span>粉丝 27.4 万</span><span>获赞 108 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="苏苏和苏打|萌宠与治愈影像创作者，和一只猫共同生活。">查看档案 →</a>
+          </div>
+        </article>
+        <article class="sbj-card sbj-author" data-sbj-author="迟到的光|短片导演，专注三人以内的小团队创作。">
+          <div class="sbj-avatar" style="background:linear-gradient(140deg,#2dd4bf,#0d9488)">光</div>
+          <div>
+            <h3>迟到的光 <span class="role">创作幕后</span></h3>
+            <p>独立短片导演，作品多在一周内完成。他乐于公开预算表、分镜与失败片段，认为创作幕后比成片更有学习价值。近两年在社区带过 11 期线上工作坊。</p>
+            <div class="nums"><span>作品 37</span><span>粉丝 9.8 万</span><span>获赞 39 万</span></div>
+            <a class="sbj-author-link" href="#" data-sbj-author="迟到的光|短片导演，专注三人以内的小团队创作。">查看档案 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 榜单 + 评论 ============ -->
+  <section class="sbj-section" id="sbjRank">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Ranking &amp; Reviews</span>
+      <h2 class="sbj-h2">数据榜单与用户评价 <small>秘密基地导航发布社区真实反馈</small></h2>
+      <p class="sbj-lead">榜单按周更新，综合播放、完播、收藏与评论质量计算，不设付费推广位。评价区的内容来自真实观看记录，仅做轻微的错别字修订。</p>
+      <div class="sbj-rank">
+        <div class="sbj-card sbj-rank-col">
+          <h3><i>热</i>本周热度榜</h3>
+          <ol>
+            <li>凌晨天台放映会 <em>42.6 万</em></li>
+            <li>宠物视角的一整天 <em>38.2 万</em></li>
+            <li>第一次拍 Vlog 避坑 <em>31.4 万</em></li>
+            <li>城市消失的 12 种声音 <em>27.9 万</em></li>
+            <li>深夜便利店观察笔记 <em>26.8 万</em></li>
+          </ol>
+        </div>
+        <div class="sbj-card sbj-rank-col">
+          <h3><i>新</i>新人榜</h3>
+          <ol>
+            <li>南桥没有桥 <em>入站 3 月</em></li>
+            <li>米粒的厨房 <em>入站 4 月</em></li>
+            <li>阿澜的雨天 <em>入站 5 月</em></li>
+            <li>旧物放映室 <em>入站 6 月</em></li>
+            <li>三楼拐角 <em>入站 7 月</em></li>
+          </ol>
+        </div>
+        <div class="sbj-card sbj-rank-col">
+          <h3><i>口</i>口碑榜</h3>
+          <ol>
+            <li>跟一位修表师傅过完一个下午 <em>9.7</em></li>
+            <li>把 4 平米储藏间改成工作室 <em>9.6</em></li>
+            <li>城市声音地图 第 3 集 <em>9.6</em></li>
+            <li>三人小组一周做完短片 <em>9.4</em></li>
+            <li>旧相机复活计划 <em>9.2</em></li>
+          </ol>
+        </div>
+      </div>
+      <div class="sbj-comments">
+        <article class="sbj-card sbj-comment">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#34d399,#0ea5a4)">林</div><span class="who">林间有风</span><span class="stars">★★★★★</span><span class="when">3 天前</span></div>
+          <p>看《凌晨天台放映会》的时候正好是深夜，中途暂停了两次。不是片子节奏慢，是需要缓一下。这种真实感在别的地方很难看到。</p>
+        </article>
+        <article class="sbj-card sbj-comment">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#60a5fa,#3b82f6)">A</div><span class="who">Autumn_09</span><span class="stars">★★★★☆</span><span class="when">5 天前</span></div>
+          <p>教程系列很扎实，尤其是收音那一段，把我之前的困惑说清楚了。扣一星是因为希望多出一些低成本器材的对比。</p>
+        </article>
+        <article class="sbj-card sbj-comment">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#fbbf24,#f97316)">木</div><span class="who">木木工坊</span><span class="stars">★★★★★</span><span class="when">1 周前</span></div>
+          <p>作为同行，能看出改造那期没有为了画面效果简化步骤。该讲受力结构的地方都讲了，这点很不容易。</p>
+        </article>
+        <article class="sbj-card sbj-comment">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#f472b6,#ec4899)">橘</div><span class="who">橘子汽水加冰</span><span class="stars">★★★★★</span><span class="when">1 周前</span></div>
+          <p>猫那期我看了三遍，第二遍才注意到窗外的光线是一点点变亮的。剪辑真的很克制，没有多余的东西。</p>
+        </article>
+        <article class="sbj-card sbj-comment">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#a78bfa,#6366f1)">周</div><span class="who">周末不加班</span><span class="stars">★★★★☆</span><span class="when">2 周前</span></div>
+          <p>投稿三天后真的收到了人工回复，还给了具体的修改建议。虽然这次没被选上，但体验比很多平台好太多。</p>
+        </article>
+        <article class="sbj-card sbj-comment sbj-comment--wide">
+          <div class="head"><div class="sbj-avatar" style="width:34px;height:34px;font-size:13px;border-radius:10px;background:linear-gradient(140deg,#2dd4bf,#0d9488)">深</div><span class="who">深海里的灯</span><span class="stars">★★★★★</span><span class="when">2 周前</span></div>
+          <p>关注这个品牌四年了，从最早那份导航文档一路看过来。变化很大，但有个东西一直没变：作者的名字永远在最前面。对我这种普通观众来说，这点很小，但又很重要。希望后面还能看到更多城市的声音。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 企业动态 / 合作 / FAQ ============ -->
+  <section class="sbj-section" id="sbjUpdates">
+    <div class="sbj-wrap">
+      <span class="sbj-eyebrow">Updates &amp; Support</span>
+      <h2 class="sbj-h2">企业动态与帮助中心 <small>秘密基地导航发布官方发布渠道</small></h2>
+      <div class="sbj-aux-grid">
+        <div class="sbj-card sbj-card-body">
+          <h3 style="font-size:16px;margin-bottom:12px">企业动态</h3>
+          <ul class="sbj-dyn">
+            <li><time>11-20</time><span>《六城夜行记》第 4 集上线，同步开启第 5 集城市投票，投票入口位于社区首页。</span></li>
+            <li><time>11-14</time><span>第三期新人创作者扶持计划开放报名，计划提供 20 个后期支持名额与 3 个月保底。</span></li>
+            <li><time>11-06</time><span>上传规范 v3.2 生效，新增字幕人工校对与响度标准化要求，详见帮助中心。</span></li>
+            <li><time>10-29</time><span>2026 年第三季度内容运营报告已公开，含更新数量、专题进度与反馈处理结果。</span></li>
+          </ul>
+        </div>
+        <div class="sbj-card sbj-card-body sbj-faq">
+          <h3 style="font-size:16px;margin-bottom:12px">常见问题</h3>
+          <details open>
+            <summary>投稿多久会有回复？</summary>
+            <p>通常在 72 小时内给出人工回复。如遇专题征集期，回复时间可能延长至 5 个工作日，会在投稿回执中注明。</p>
+          </details>
+          <details>
+            <summary>作品必须独家首发吗？</summary>
+            <p>不必须。我们接受已在其他平台发布的作品，只需注明首次发布渠道。签约作品另有约定，会在合同中单独说明。</p>
+          </details>
+          <details>
+            <summary>画质和字幕有什么硬性要求？</summary>
+            <p>分辨率不低于 1080p，音频需经过响度标准化处理，字幕必须人工校对。上传页面会自动提示不符合项。</p>
+          </details>
+          <details>
+            <summary>可以商用授权吗？</summary>
+            <p>可以。请通过联系合作通道提交使用场景、时长与投放范围，我们会在 5 个工作日内回复方案与报价区间。</p>
+          </details>
+          <details>
+            <summary>如何参与专题共创？</summary>
+            <p>每期专题会提前两周发布征集说明，包含主题、城市与素材要求。关注企业动态或社区公告即可获取第一手信息。</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="sbj-card sbj-card-body" style="margin-top:18px">
+        <h3 style="font-size:16px;margin-bottom:10px">合作品牌与伙伴</h3>
+        <p style="font-size:13.5px;color:var(--sbj-muted)">我们与独立书店、在地咖啡馆、社区美术馆和影像器材工作室保持长期合作，共同支持创作者完成线下放映与公开课。</p>
+        <div class="sbj-partners">
+          <span class="sbj-partner">拾光独立书店</span>
+          <span class="sbj-partner">南巷咖啡实验室</span>
+          <span class="sbj-partner">三层社区美术馆</span>
+          <span class="sbj-partner">长青器材工作室</span>
+          <span class="sbj-partner">城市声音档案馆</span>
+        </div>
+      </div>
+
+      <div class="sbj-submit">
+        <div>
+          <h3>把你在拍的东西发过来</h3>
+          <p>无论是一支完整的短片，还是一段还没剪完的素材，都欢迎投递。秘密基地导航发布始终相信，很多值得被看见的东西，最初都藏在某个不起眼的文件夹里。</p>
+        </div>
+        <button class="sbj-btn" data-sbj-modal="submit">进入投稿通道</button>
+        <button class="sbj-btn sbj-btn--ghost" data-sbj-modal="contact">联系我们</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sbj-footer">
+  <div class="sbj-wrap">
+    <div class="sbj-foot-grid">
+      <div class="sbj-foot-brand">
+        <div class="sbj-brand" style="margin-bottom:12px">
+          <span class="sbj-brand-mark">秘</span>
+          <span>
+            <span class="sbj-brand-name">秘密基地导航发布</span>
+            <span class="sbj-brand-sub">Secret Base · Video Portal</span>
+          </span>
+        </div>
+        <p>秘密基地导航发布官方网站，专注城市影像与在地生活记录，为创作者与企业搭建高品质内容生态。所有精品内容均为原创、正版、高清呈现，社区持续运营中。</p>
+      </div>
+      <div>
+        <h3>内容入口</h3>
+        <ul>
+          <li><a href="#sbjFocus">焦点内容</a></li>
+          <li><a href="#sbjVideos">视频社区</a></li>
+          <li><a href="#sbjTopics">专题企划</a></li>
+          <li><a href="#sbjRank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于品牌</h3>
+        <ul>
+          <li><a href="#sbjInsight">品牌解析</a></li>
+          <li><a href="#sbjAuthors">创作者矩阵</a></li>
+          <li><a href="#sbjUpdates">企业动态</a></li>
+          <li><a href="#sbjFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参与创作</h3>
+        <ul>
+          <li><a href="#" data-sbj-modal="submit">作品投稿</a></li>
+          <li><a href="#" data-sbj-modal="contact">合作联系</a></li>
+          <li><a href="#" data-sbj-modal="share">分享本页</a></li>
+          <li><a href="#sbjTop">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sbj-foot-bottom">
+      <span>© 2026 秘密基地导航发布 版权所有 · 持续运营中 · 备案号：示例备 2026000000 号</span>
+      <span>一个认真对待每一帧的原创视频品牌</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sbj-toast" id="sbjToast">已复制</div>
+<button class="sbj-totop" id="sbjToTop" aria-label="回到顶部">↑</button>
+
+<div class="sbj-modal" id="sbjModal" role="dialog" aria-modal="true">
+  <div class="sbj-modal-box">
+    <h3 id="sbjModalTitle">标题</h3>
+    <div id="sbjModalBody"></div>
+    <div class="sbj-modal-foot">
+      <button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-close>关闭</button>
+      <button class="sbj-btn sbj-btn--sm" id="sbjModalConfirm">确定</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast = document.getElementById('sbjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2000);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('sbjBurger');
+  var mobilePanel = document.getElementById('sbjMobilePanel');
+  burger.addEventListener('click', function(){
+    var open = mobilePanel.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobilePanel.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && !e.target.hasAttribute('data-sbj-modal')){
+      mobilePanel.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索提示 */
+  var input = document.getElementById('sbjSearchInput');
+  var hint = document.getElementById('sbjSearchHint');
+  var pool = ['夜行','手艺人','小空间','天台放映','便利店','修表','旧相机','宠物','教程','声音地图'];
+  if(input){
+    input.addEventListener('focus', function(){ hint.classList.add('is-on'); });
+    input.addEventListener('blur', function(){ setTimeout(function(){ hint.classList.remove('is-on'); },160); });
+    input.addEventListener('input', function(){
+      var v = input.value.trim();
+      if(!v){ hint.textContent = '试试「夜行」「手艺人」「小空间」等关键词'; return; }
+      var hit = pool.filter(function(k){ return k.indexOf(v) > -1 || v.indexOf(k) > -1; });
+      if(hit.length){
+        hint.textContent = '找到 ' + hit.length + ' 个相关方向：' + hit.join('、') + '（结果仅作方向提示）';
+      }else{
+        hint.textContent = '暂未匹配到「' + v + '」，可换个词，或直接投稿告诉我们你想看什么。';
+      }
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        var v = input.value.trim();
+        if(!v){ showToast('请输入搜索关键词'); return; }
+        var target = document.getElementById('sbjVideos');
+        if(target){ target.scrollIntoView({behavior:'smooth'}); }
+        showToast('已为你定位到视频社区：' + v);
+        hint.classList.remove('is-on');
+      }
+    });
+  }
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-sbj-like]');
+    if(like){
+      var on = like.classList.toggle('is-on');
+      like.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var b = like.querySelector('b');
+      if(b){
+        var txt = b.textContent.replace(/[^\d.]/g,'');
+        var unit = b.textContent.indexOf('万') > -1 ? '万' : '';
+        var num = parseFloat(txt) || 0;
+        num = on ? num + 0.1 : Math.max(0, num - 0.1);
+        b.textContent = (unit === '万' ? num.toFixed(1) : Math.round(num)) + unit;
+      }
+      showToast(on ? '已点赞，感谢支持原创' : '已取消点赞');
+      return;
+    }
+    var fav = e.target.closest('[data-sbj-fav]');
+    if(fav){
+      var fon = fav.classList.toggle('is-on');
+      fav.setAttribute('aria-pressed', fon ? 'true' : 'false');
+      fav.innerHTML = fon ? '♥ 已收藏' : '☆ 收藏';
+      showToast(fon ? '已加入收藏，可在个人页查看' : '已取消收藏');
+      return;
+    }
+    var copy = e.target.closest('[data-sbj-copy]');
+    if(copy){
+      var url = location.href.split('#')[0];
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){ showToast('链接已复制，可分享给朋友'); },
+          function(){ showToast('复制失败，请手动复制地址栏链接'); });
+      }else{
+        showToast('复制失败，请手动复制地址栏链接');
+      }
+      return;
+    }
+    var author = e.target.closest('[data-sbj-author]');
+    if(author){
+      e.preventDefault();
+      var raw = author.getAttribute('data-sbj-author') || '';
+      var parts = raw.split('|');
+      openModal('创作者档案 · ' + (parts[0] || ''), '<p>' + (parts[1] || '') + '</p><p style="margin-top:10px;color:#93a5c4;font-size:12.5px">该档案为社区签约创作者公开信息摘要，完整作品列表可在视频社区检索。</p>');
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('sbjModal');
+  var modalTitle = document.getElementById('sbjModalTitle');
+  var modalBody = document.getElementById('sbjModalBody');
+  var modalConfirm = document.getElementById('sbjModalConfirm');
+  var confirmHandler = null;
+
+  function openModal(title, html, handler){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    confirmHandler = handler || null;
+    modal.classList.add('is-on');
+  }
+  function closeModal(){
+    modal.classList.remove('is-on');
+    confirmHandler = null;
+  }
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-sbj-modal]');
+    if(trigger){
+      e.preventDefault();
+      var type = trigger.getAttribute('data-sbj-modal');
+      if(type === 'share'){
+        openModal('分享这个页面', '<p>把秘密基地导航发布分享给你身边也在拍东西的人：</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-share="微信">微信</button><button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-share="微博">微博</button><button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-share="QQ">QQ</button><button class="sbj-btn sbj-btn--ghost sbj-btn--sm" data-sbj-copy>复制链接</button></div><p style="margin-top:12px;font-size:12px">当前为演示分享面板，正式环境将唤起对应应用。</p>');
+      }else if(type === 'submit'){
+        openModal('投稿通道', '<p>填写基本信息，我们会在 72 小时内给出人工回复。</p><label>作品标题</label><input type="text" id="sbjSubTitle" placeholder="例如：凌晨天台放映会"><label>联系方式</label><input type="text" id="sbjSubContact" placeholder="邮箱或社交账号"><label>一句话简介</label><textarea id="sbjSubDesc" rows="3" placeholder="讲讲你想拍什么、为什么想拍"></textarea>', function(){
+          var t = document.getElementById('sbjSubTitle');
+          var c = document.getElementById('sbjSubContact');
+          if(!t || !t.value.trim() || !c || !c.value.trim()){
+            showToast('请至少填写标题与联系方式');
+            return false;
+          }
+          closeModal();
+          showToast('投稿已提交，请留意回复');
+        });
+      }else if(type === 'contact'){
+        openModal('联系与合作', '<p>转载授权、商用合作、线下放映、器材借用，都可以从这里开始。</p><label>合作类型</label><input type="text" id="sbjCoopType" placeholder="例如：商用授权 / 线下放映"><label>需求说明</label><textarea id="sbjCoopDesc" rows="3" placeholder="请简述使用场景、时长与投放范围"></textarea><p style="margin-top:12px;font-size:12px">我们会在 5 个工作日内回复具体方案与报价区间。</p>', function(){
+          var d = document.getElementById('sbjCoopDesc');
+          if(!d || !d.value.trim()){ showToast('请填写需求说明'); return false; }
+          closeModal();
+          showToast('已收到合作需求，感谢联系');
+        });
+      }else if(type === 'report'){
+        openModal('反馈与举报', '<p>如果发现内容存在问题，请告诉我们具体位置与原因。</p><label>问题描述</label><textarea id="sbjRepDesc" rows="3" placeholder="请描述问题所在片段与时间点"></textarea>', function(){
+          closeModal();
+          showToast('反馈已提交，我们会尽快核查');
+        });
+      }
+      return;
+    }
+    if(e.target.closest('[data-sbj-close]')){ closeModal(); return; }
+    if(e.target.closest('[data-sbj-share]')){
+      var name = e.target.closest('[data-sbj-share]').getAttribute('data-sbj-share');
+      showToast('已生成' + name + '分享文案，请粘贴到对应应用');
+      return;
+    }
+    if(e.target === modal){ closeModal(); }
+  });
+  modalConfirm.addEventListener('click', function(){
+    if(confirmHandler){
+      var r = confirmHandler();
+      if(r === false){ return; }
+    }else{
+      closeModal();
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-on')){ closeModal(); }
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('sbjToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ toTop.classList.add('is-on'); }
+    else{ toTop.classList.remove('is-on'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+
+</body>
+          </html>
